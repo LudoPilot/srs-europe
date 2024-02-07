@@ -1,4 +1,4 @@
-## À propos
+## But du projet
 Ce projet est un site consacré aux pathologies thoraciques sous-diagnostiquées en France et en Europe. Le but est de permettre à des patients d'être mieux informés et de trouver facilement des professionnels de santé (médecins du sport, radiologues, chirurgiens) pouvant fournir un diagnostic précis et fiable, et si possible apporter des solutions médicales. 
 
 ## Structure du projet

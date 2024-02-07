@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ArticleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,5 +16,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+	return $request->user();
 });
+
+Route::get('/articles', [ArticleController::class, 'index']);
+
+// Read
+Route::get('/articles/{id}', [ArticleController::class, 'index']);
+
+// Create
+Route::post('/articles', [ArticleController::class, 'store']);
+
+// Update
+Route::put('/articles/{id}', [ArticleController::class, 'update']);
+
+// Delete
+Route::delete('/articles/{id}', [ArticleController::class, 'destroy']);
